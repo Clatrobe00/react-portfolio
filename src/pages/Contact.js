@@ -1,6 +1,12 @@
+import ContactForm from '../components/contact-form/ContactForm'
+import Container from 'react-bootstrap/Container';
+
 const Contact = () => {
     return (
-        <h1>Hello from Contact</h1>
+        <Container>
+            <h1>Hello from Contact</h1>
+            <ContactForm />
+        </Container>
     )
 }
 
