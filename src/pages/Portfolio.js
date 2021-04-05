@@ -1,12 +1,20 @@
 import ProjectCard from '../components/project-card/ProjectCard';
-import Gif from '../assets/gifs/Music-Spider.gif';
+import musicSpiderGif from '../assets/gifs/Music-Spider.gif';
+import liaBanner from '../assets/pictures/lanterns-banner.png';
+import cyoaBanner from '../assets/pictures/spaceship-5440243_1920.png';
 import Container from 'react-bootstrap/Container';
+import CardColumns from 'react-bootstrap/CardColumns';
+import comingSoon from '../assets/pictures/ComingSoon.jpg';
 
 const Portfolio = () => {
     return (
         <Container>
-            <h1>Hello from Portfolio</h1>
-            <ProjectCard src={Gif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.'/>
+            <CardColumns>
+                <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.'/>
+                <ProjectCard src={liaBanner} name='Lia Liu Chinese' description='A website for Lia Liu Chinese built with React.'/>
+                <ProjectCard src={cyoaBanner} name='Castaway: Flight of the Phoenix' description='A choose-your-own-adventure style game that challenges the user to escape an alien planet.'/>
+                <ProjectCard src={comingSoon} name='Coming Soon' description='My latest incredible project is coming soon.'/>
+            </CardColumns>    
         </Container>
 
     )
