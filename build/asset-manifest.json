@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.26f9e6b0.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.6477522c.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.6477522c.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.55debb9f.chunk.js": "/react-portfolio/static/js/2.55debb9f.chunk.js",
+    "static/js/2.55debb9f.chunk.js.map": "/react-portfolio/static/js/2.55debb9f.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.26f9e6b0.chunk.css.map": "/react-portfolio/static/css/main.26f9e6b0.chunk.css.map",
+    "static/js/2.55debb9f.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.55debb9f.chunk.js.LICENSE.txt",
+    "static/media/ComingSoon.153729f4.jpg": "/react-portfolio/static/media/ComingSoon.153729f4.jpg",
+    "static/media/Music-Spider.1be74ba1.gif": "/react-portfolio/static/media/Music-Spider.1be74ba1.gif",
+    "static/media/lanterns-banner.2b6c981a.png": "/react-portfolio/static/media/lanterns-banner.2b6c981a.png",
+    "static/media/spaceship-5440243_1920.3bbd3a7a.png": "/react-portfolio/static/media/spaceship-5440243_1920.3bbd3a7a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e530417f.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.55debb9f.chunk.js",
+    "static/css/main.26f9e6b0.chunk.css",
+    "static/js/main.6477522c.chunk.js"
+  ]
+}
