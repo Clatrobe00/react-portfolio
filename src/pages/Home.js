@@ -1,6 +1,12 @@
+import Container from 'react-bootstrap/Container';
+import ProjectCard from '../components/project-card/ProjectCard'
+import profileImage from '../assets/pictures/CprofS.jpg';
+
 const Home = () => {
     return (
-        <h1>Hello from Home</h1>
+        <Container>
+            <ProjectCard src={profileImage} name='Charles Latrobe' description='Full stack developer specializing in Node and React'/>
+        </Container>
     )
 }
 
