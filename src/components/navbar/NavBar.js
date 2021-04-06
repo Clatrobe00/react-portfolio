@@ -9,11 +9,11 @@ const NavBar = () => (
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
             <Nav.Link href="home">Home</Nav.Link>
+            <Nav.Link href="contact">Contact</Nav.Link>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
                 <NavDropdown.Item href="projects">Projects</NavDropdown.Item>
                 <NavDropdown.Item href="resume">Resume</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="contact">Contact</Nav.Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
