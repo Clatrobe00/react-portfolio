@@ -10,7 +10,7 @@ const NavBar = () => (
             <Nav className="mr-auto">
             <Nav.Link href="home">Home</Nav.Link>
             <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-                <NavDropdown.Item href="portfolio">Projects</NavDropdown.Item>
+                <NavDropdown.Item href="projects">Projects</NavDropdown.Item>
                 <NavDropdown.Item href="resume">Resume</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="portfolio">Portfolio</Nav.Link>

@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
+import Projects from './pages/Projects';
 import NavBar from './components/navbar/NavBar';
 import Footer from './components/footer/Footer';
 import background from './assets/pictures/hoodStock.png';
+import Resume from './pages/Resume'
 
 function App() {
   return (
@@ -22,8 +23,11 @@ function App() {
           <NavBar />
 
           <Switch>
-            <Route path="/portfolio">
-              <Portfolio />
+            <Route path="/projects">
+              <Projects />
+            </Route>
+            <Route path="/resume">
+              <Resume />
             </Route>
             <Route path="/contact">
               <Contact />
