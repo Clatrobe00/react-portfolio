@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import ProjectCard from '../components/project-card/ProjectCard'
-import profileImage from '../assets/pictures/CprofS.jpg';
+import profileImage from '../assets/pictures/Profile.jpg';
 
 const Home = () => {
     return (
