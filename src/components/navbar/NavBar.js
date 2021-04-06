@@ -13,7 +13,6 @@ const NavBar = () => (
                 <NavDropdown.Item href="projects">Projects</NavDropdown.Item>
                 <NavDropdown.Item href="resume">Resume</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="portfolio">Portfolio</Nav.Link>
             <Nav.Link href="contact">Contact</Nav.Link>
             </Nav>
         </Navbar.Collapse>
