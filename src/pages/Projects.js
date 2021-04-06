@@ -10,7 +10,7 @@ const Portfolio = () => {
     return (
         <Container>
             <CardColumns>
-                <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.'/>
+                <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.' link='https://inesr19.github.io/Project-1/' children='music spider' buttonStyle='btn--primary' buttonSize='btn--large'/>
                 <ProjectCard src={liaBanner} name='Lia Liu Chinese' description='A website for Lia Liu Chinese built with React.'/>
                 <ProjectCard src={cyoaBanner} name='Castaway: Flight of the Phoenix' description='A choose-your-own-adventure style game that challenges the user to escape an alien planet.'/>
                 <ProjectCard src={comingSoon} name='Coming Soon' description='My latest incredible project is coming soon.'/>

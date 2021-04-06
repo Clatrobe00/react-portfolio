@@ -7,7 +7,7 @@ const STYLES = ['btn--primary', 'btn--outline'];
 const SIZES = ['btn--medium', 'btn--large'];
 
 const Button = (props) => {
-    const checkButtonStyle = STYLES.includes(props.buttonStyle) ? props.buttonStyle : STYLES[0];
+    const checkButtonStyle = STYLES.includes(props.buttonStyle) ? props.buttonStyle : STYLES[1];
 
     const checkButtonSize = SIZES.includes(props.buttonSize) ? props.buttonSize : SIZES[0];
 
