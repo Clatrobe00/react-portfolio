@@ -2,7 +2,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 
 const Footer = () => (
-    <Jumbotron fluid>
+    <Jumbotron style={{ opacity: '50%' }}fluid>
         <Container>
             <h1>Footer</h1>
             <p>

@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 
 const ProjectCard = (props) => (
     <Card style={{ width: '18rem' }}>
@@ -9,7 +8,6 @@ const ProjectCard = (props) => (
             <Card.Text>
                 {props.description}
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
         </Card.Body>
     </Card>
 )

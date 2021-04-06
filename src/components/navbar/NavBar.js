@@ -2,7 +2,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav'
 
 const NavBar = () => (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" style={{ opacity: '50%' }}>
         <Navbar.Brand href="#home">React Portfolio</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
