@@ -12,11 +12,12 @@ const Button = (props) => {
     const checkButtonSize = SIZES.includes(props.buttonSize) ? props.buttonSize : SIZES[0];
 
     return (
-        <Link to={props.link} className='btnMobile'>
+        <a href={props.link} className='btnMobile'>
             <button className={`btn ${checkButtonStyle} ${checkButtonSize}`} onClick={props.onClick} type={props.type} >
                 {props.children}
             </button>
-        </Link>
+        </a>
+
     )
 }
 

@@ -1,5 +1,5 @@
 import Card from 'react-bootstrap/Card';
-import Button from '../button/Button';
+import ProjectButton from '../button/ProjectButton';
 
 const ProjectCard = (props) => (
     <Card style={{ width: '18rem' }}>
@@ -10,9 +10,9 @@ const ProjectCard = (props) => (
                 {props.description}
             </Card.Text>
         </Card.Body>
-        <Button link={props.link} onClick={props.onClick} >
+        <ProjectButton link={props.link}>
             {props.children}
-        </Button>
+        </ProjectButton>
     </Card>
 )
 
