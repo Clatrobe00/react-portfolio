@@ -6,7 +6,7 @@ const STYLES = ['btn--primary', 'btn--outline'];
 
 const SIZES = ['btn--medium', 'btn--large'];
 
-const Button = (props) => {
+const ProjectButton = (props) => {
     const checkButtonStyle = STYLES.includes(props.buttonStyle) ? props.buttonStyle : STYLES[1];
 
     const checkButtonSize = SIZES.includes(props.buttonSize) ? props.buttonSize : SIZES[0];
@@ -21,4 +21,4 @@ const Button = (props) => {
     )
 }
 
-export default Button;
+export default ProjectButton;
