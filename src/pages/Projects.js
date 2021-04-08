@@ -11,7 +11,7 @@ import burgerLogger from '../assets/pictures/burgerLogger.jpg';
 const Portfolio = () => {
     return (
         <Container>
-            <CardColumns>
+            <CardColumns style={{ display: 'flex', flexWrap: 'wrap' }}>
                 <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.' link='https://inesr19.github.io/Project-1/' children='Find some music'/>
                 <ProjectCard src={liaBanner} name='Lia Liu Chinese' description='A website for Lia Liu Chinese built with React.' link='https://lia-liu-chinese.herokuapp.com/' children='Learn Chinese'/>
                 <ProjectCard src={cyoaBanner} name='Castaway: Flight of the Phoenix' description='A choose-your-own-adventure style game that challenges the user to escape an alien planet.' link='https://cyoa-rpg.herokuapp.com/' children='Try your luck'/>
