@@ -1,11 +1,12 @@
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import ProjectButton from '../button/ProjectButton';
+import './ContactJumbo.css';
 
 const ContactJumbo = () => {
 
 
     return (
-        <Jumbotron style={{ opacity: '50%' }}>
+        <Jumbotron className='ContactJumbo'>
         <h1>Interested in working with me?</h1>
         <p>
             Click any of the links below to find me on GitHub or LinkedIn, or just contact me directly at my email.
