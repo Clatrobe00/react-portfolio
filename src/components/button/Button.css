@@ -1,5 +1,5 @@
 :root {
-    --primary: pink;
+    --primary:#fff;
 }
 
 .btn {
@@ -7,18 +7,19 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    margin: 5px;
 }
 
 .btn--primary {
     background-color:  var(--primary);
-    color: green;
-    border: 1px solid var(--primary);
+    color: black;
+    border: 2px solid var(--primary);
 }
 
 .btn--outline {
     background-color: transparent;
-    color: green;
+    color: black;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
     transition: all 0.3s ease-out;
 }
