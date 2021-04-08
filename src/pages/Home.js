@@ -7,7 +7,7 @@ const Home = () => {
         <Container>
             <CardColumns>
                 <ProjectCard src={profileImage} name='Charles Latrobe' description='Full stack developer specializing in Node and React' link='https://github.com/Clatrobe00' children='My Github'/>
-                <ProjectCard name='Technologies' description='React.js' children={false}/>
+                <ProjectCard name='Technologies' children={false} />
             </CardColumns>
         </Container>
     )

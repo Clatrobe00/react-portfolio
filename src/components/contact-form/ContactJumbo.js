@@ -12,8 +12,8 @@ const ContactJumbo = () => {
             Click any of the links below to find me on GitHub or LinkedIn, or just contact me directly at my email.
         </p>
         <p>
-            <ProjectButton link='https://www.linkedin.com/in/charles-latrobe-bateman-6b748a1b6/' children="LinkedIn" />
-            <ProjectButton link='https://github.com/Clatrobe00' children="GitHub" />
+            <ProjectButton buttonStyle='btn--outline' link='https://www.linkedin.com/in/charles-latrobe-bateman-6b748a1b6/' children="LinkedIn" />
+            <ProjectButton buttonStyle='btn--outline' link='https://github.com/Clatrobe00' children="GitHub" />
         </p>
         <p>
             <ProjectButton link='mailto:charlie.bateman117@gmail.com?subject=Subject&body=You%20are%20hired!' children='Charlie.Bateman117@gmail.com'/>
