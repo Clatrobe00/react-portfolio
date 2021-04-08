@@ -32,6 +32,7 @@ const ProjectCard = (props) => {
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>
                 {props.description}
+                {props.children}
             </Card.Text>
         </Card.Body>
     </Card>
