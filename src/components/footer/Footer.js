@@ -1,8 +1,9 @@
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
+import './Footer.css';
 
 const Footer = () => (
-    <Jumbotron style={{ opacity: '50%' }} fluid>
+    <Jumbotron className='Footer' fluid>
         <Container>
             <h1>Footer</h1>
             <p>
