@@ -18,7 +18,7 @@ const Portfolio = () => {
                 link='https://cyoa-rpg.herokuapp.com/' repo='https://github.com/Clatrobe00/CYOA' children='Try your luck'/>
             </CardDeck>
             <CardDeck>    
-                <ProjectCard src={comingSoon} name='Coming Soon' description='My latest incredible project is coming soon.'/>
+                <ProjectCard src={comingSoon} name='Google Books Search' description='A full stack MERN application that allows the user to search books through Google Books, and then save books to or delete books from their collection.' link='https://clb-google-books-search.herokuapp.com/' repo='https://github.com/Clatrobe00/google-books-search' children='Find your next book'/>
                 <ProjectCard src={learningApp} name='Language Learning App' description='A mobile-first language learning app for children.' repo='https://github.com/kurtp23/language-app' link='https://github.com/kurtp23/language-app' children='Expand your mind'/>
                 <ProjectCard src={burgerLogger} name='The Burger Logger' description='A full-stack app built with Node, Express, SQL, and HandleBars.' repo='https://github.com/Clatrobe00/Burger-Logger' link='https://burger-logger-clb.herokuapp.com/' children='Grab a burger'/>
             </CardDeck>    
