@@ -13,10 +13,11 @@ const ProjectCard = (props) => {
       config: { mass: 5, tension: 600, friction: 80 }
     })
     
-    if (props.children && props.link) {
+    if (props.children && props.link && props.repo) {
+        
         return (
-            <div className='templateContainer'>
-                <div onClick={() => set(state => !state)}>
+ 
+                <div id='wrapper' onClick={() => set(state => !state)}>
                     <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
                         <Card className='genCard projectCard'>
                             <Card.Img variant="top" src={props.src} />
@@ -56,7 +57,7 @@ const ProjectCard = (props) => {
                         </Card>
                     </a.div>
                 </div>
-            </div>    
+  
                     )
     } else
     return (

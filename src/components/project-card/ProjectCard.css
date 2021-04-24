@@ -1,38 +1,33 @@
-.genCard {
+.genCard.titleCard {
     color: black;
     background: rgba(175, 175, 175, 0.7);
     margin-top: 50px;
 }
 
 .c {
-    position: absolute;
+    width: 50%;
     height: 50%;
     cursor: pointer;
     will-change: transform, opacity;
     margin: auto;
   }
-  
+ 
 .front,
 .back {
-    background-size: auto;
-    size: 50%;
-  }
-  
-.templateContainer {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-    user-select: none;
-    background: #f0f0f0;
-  }
-  
-.templateContainer > div {
-    width: 100%;
-    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #40e0d0;
+    background-size: auto;
+    /* width: 33%;
+    height: 33%; */
+
+  }
+  .front{
+    position:absolute
+  }
+
+  .back{
+    
+  }
+  #wrapper {
+    display: flex;
+    justify-content: space-between;
   }
