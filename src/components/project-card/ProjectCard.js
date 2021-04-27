@@ -64,7 +64,7 @@ const ProjectCard = (props) => {
                                 <Card.Title>{props.name}</Card.Title>
                                 <Card.Text>
                                 <h6>Tech Used</h6>
-                                <ul>
+                                <ul style={{ textAlign: 'left' }}>
                                     <li>{props.technologies[0]}</li>
                                     <li>{props.technologies[1]}</li>
                                     <li>{props.technologies[2]}</li>

@@ -1,5 +1,5 @@
 const TechList = () => (
-    <ul>
+    <ul style={{ textAlign: 'left' }}>
         <li>React</li>
         <li>Node</li>
         <li>Sequelize</li>
