@@ -12,7 +12,7 @@ const Portfolio = () => {
     return (
         <>
                {/* <Row style={{ position: 'absolute', top: '0px', display: 'flex' }}> */}
-                 {/* <CardDeck>  */}
+                 <CardDeck> 
                     <>
                     <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.' link='https://inesr19.github.io/Project-1/' repo='https://github.com/Clatrobe00/Music-Spider' children='Find some music'/>
                     </>
@@ -23,10 +23,10 @@ const Portfolio = () => {
                     <ProjectCard src={cyoaBanner} name='Castaway: Flight of the Phoenix' description='A choose-your-own-adventure style game that challenges the user to escape an alien planet.'
                     link='https://cyoa-rpg.herokuapp.com/' repo='https://github.com/Clatrobe00/CYOA' children='Try your luck'/>
                     </>
-                {/* </CardDeck> */}
+                </CardDeck>
                 {/* </Row>
                 <Row style={{ position: 'absolute', bottom: '0px' }}> */}
-                {/* <CardDeck> */}
+                <CardDeck>
                     <>
                     <ProjectCard src={comingSoon} name='Google Books Search' description='A full stack MERN application that allows the user to search books through Google Books, and then save books to or delete books from their collection.' link='https://clb-google-books-search.herokuapp.com/' repo='https://github.com/Clatrobe00/google-books-search' children='Find your next book'/>
                     </>
@@ -36,7 +36,7 @@ const Portfolio = () => {
                     <>          
                     <ProjectCard src={burgerLogger} name='The Burger Logger' description='A full-stack app built with Node, Express, SQL, and HandleBars.' repo='https://github.com/Clatrobe00/Burger-Logger' link='https://burger-logger-clb.herokuapp.com/' children='Grab a burger'/>
                     </>
-                 {/* </CardDeck>  */}
+                 </CardDeck> 
                 {/* </Row> */}
         </>
     )

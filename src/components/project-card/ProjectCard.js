@@ -17,9 +17,20 @@ const ProjectCard = (props) => {
         
         return (
  
-                <div id='wrapper' onClick={() => set(state => !state)}>
-                    <a.div class="c back" style={{ opacity: opacity.interpolate(o => 1 - o), transform }}>
-                        <Card className='genCard projectCard'>
+                <Card style={{ 
+                    backgroundColor: 'transparent', 
+                    border: '0px', 
+                    position: 'relative',
+                    marginTop: '10px',
+                    marginBottom: '10px' }} id='wrapper' onClick={() => set(state => !state)}>
+                    <a.div class="c back" style={{ 
+                        bottom: '0px', 
+                        opacity: opacity.interpolate(o => 1 - o), 
+                        transform }}>
+                        <Card className='genCard projectCard' style={{ backgroundColor: 'rgba(175, 175, 175, 0.7)', 
+                        height: '100%',
+                        marginTop: '10px',
+                        marginBottom: '10px' }}>
                             <Card.Img variant="top" src={props.src} />
                             <Card.Body>
                                 <Card.Title>{props.name}</Card.Title>
@@ -37,13 +48,25 @@ const ProjectCard = (props) => {
                             </p>
                         </Card>
                     </a.div>
-                    <a.div class="c front" style={{ opacity, transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
-                        <Card className='genCard projectCard'>
+                    <a.div class="c front" 
+                        style={{ position: 'absolute',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                            opacity, 
+                            transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
+                        <Card className='genCard projectCard' style={{ 
+                            height: '100%', 
+                            backgroundColor: 'rgba(175, 175, 175, 0.7)',
+                            marginTop: '10px',
+                            marginBottom: '10px' }}>
                             <Card.Img variant="top" src={props.src} />
                             <Card.Body>
                                 <Card.Title>{props.name}</Card.Title>
                                 <Card.Text>
-                                    {props.description}
+                                    A list of technologies will be here
+                                    -Item 1
+                                    -Item 2
+                                    -Item 3
                                 </Card.Text>
                             </Card.Body>
                             <p>
@@ -56,7 +79,7 @@ const ProjectCard = (props) => {
                             </p>
                         </Card>
                     </a.div>
-                </div>
+                </Card>
   
                     )
     } else
