@@ -63,10 +63,12 @@ const ProjectCard = (props) => {
                             <Card.Body>
                                 <Card.Title>{props.name}</Card.Title>
                                 <Card.Text>
-                                    A list of technologies will be here
-                                    -Item 1
-                                    -Item 2
-                                    -Item 3
+                                <h6>Tech Used</h6>
+                                <ul>
+                                    <li>{props.technologies[0]}</li>
+                                    <li>{props.technologies[1]}</li>
+                                    <li>{props.technologies[2]}</li>
+                                </ul>
                                 </Card.Text>
                             </Card.Body>
                             <p>
