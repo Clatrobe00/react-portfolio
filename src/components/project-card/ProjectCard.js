@@ -92,8 +92,10 @@ const ProjectCard = (props) => {
             <Card.Title>{props.name}</Card.Title>
             <Card.Text>
                 {props.description}
-                {props.children}
             </Card.Text>
+            {props.link ? <ProjectButton link={props.link}>
+                {props.children}
+            </ProjectButton> : <div>{props.children}</div>}
         </Card.Body>
     </Card>
 )}
