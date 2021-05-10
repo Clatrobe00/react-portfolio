@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.51cbbe8d.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.190c4a5a.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.190c4a5a.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.36e0b599.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.36e0b599.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
@@ -15,7 +15,7 @@
     "static/media/Castaway.6136250f.jpg": "/react-portfolio/static/media/Castaway.6136250f.jpg",
     "static/media/ChineseLanterns.f44fac30.jpg": "/react-portfolio/static/media/ChineseLanterns.f44fac30.jpg",
     "static/media/ComingSoon.b57301e1.jpg": "/react-portfolio/static/media/ComingSoon.b57301e1.jpg",
-    "static/media/LatrobeEDResumePDF.7c2a1316.pdf": "/react-portfolio/static/media/LatrobeEDResumePDF.7c2a1316.pdf",
+    "static/media/LatrobeWDResume.184656e2.pdf": "/react-portfolio/static/media/LatrobeWDResume.184656e2.pdf",
     "static/media/Music-Spider.1be74ba1.gif": "/react-portfolio/static/media/Music-Spider.1be74ba1.gif",
     "static/media/Profile.b7e82100.jpg": "/react-portfolio/static/media/Profile.b7e82100.jpg",
     "static/media/burgerLogger.d1feeb62.jpg": "/react-portfolio/static/media/burgerLogger.d1feeb62.jpg",
@@ -27,6 +27,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.32cfd1a7.chunk.js",
     "static/css/main.51cbbe8d.chunk.css",
-    "static/js/main.190c4a5a.chunk.js"
+    "static/js/main.36e0b599.chunk.js"
   ]
 }
