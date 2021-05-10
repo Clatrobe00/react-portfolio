@@ -1,7 +1,8 @@
 import { Container, CardColumns } from 'react-bootstrap';
-import ProjectCard from '../components/project-card/ProjectCard'
+import ProjectCard from '../components/project-card/ProjectCard';
 import profileImage from '../assets/pictures/Profile.jpg';
-import TechList from '../components/tech-list/TechList'
+import TechList from '../components/tech-list/TechList';
+import Bio from '../components/bio/Bio';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
                 <ProjectCard name='Technologies' description={false}>
                     <TechList />
                 </ProjectCard>
+                {/* <Bio /> */}
             </CardColumns>
         </Container>
     )
