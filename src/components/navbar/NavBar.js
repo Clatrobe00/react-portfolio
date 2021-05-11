@@ -4,7 +4,7 @@ import { NavDropdown } from 'react-bootstrap';
 
 const NavBar = () => (
     <Navbar bg="light" expand="lg" style={{ opacity: '80%', zIndex: 999 }}>
-        <Navbar.Brand href="#home">React Portfolio</Navbar.Brand>
+        <Navbar.Brand href="#home">Charles Latrobe</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
