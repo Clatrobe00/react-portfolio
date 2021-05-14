@@ -13,7 +13,7 @@ const Portfolio = () => {
     const techList = ['node', 'react', 'css'];
 
     return (
-        <>
+        <div style={{ zIndex: '1' }}>
                {/* <Row style={{ position: 'absolute', top: '0px', display: 'flex' }}> */}
                  <CardDeck> 
                     <>
@@ -41,7 +41,7 @@ const Portfolio = () => {
                     </>
                  </CardDeck> 
                 {/* </Row> */}
-        </>
+        </div>
     )
 }
 
