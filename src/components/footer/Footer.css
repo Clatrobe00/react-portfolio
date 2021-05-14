@@ -3,3 +3,11 @@
     margin-bottom: 0;
     margin-top: 50px;
 }
+
+.footer-links {
+    color:black;
+}
+
+.footer-links:hover {
+    color: black;
+}

@@ -33,8 +33,8 @@ function App() {
             </Switch>
           </Container>
         </div>
+        <Footer />
       </Router>
-      <Footer />
     </div>
 
   );
