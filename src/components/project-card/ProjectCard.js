@@ -26,7 +26,8 @@ const ProjectCard = (props) => {
                     <a.div class="c back" style={{ 
                         bottom: '0px', 
                         opacity: opacity.interpolate(o => 1 - o), 
-                        transform }}>
+                        transform,
+                        zIndex: '1' }}>
                         <Card className='genCard projectCard' style={{ backgroundColor: 'rgba(175, 175, 175, 0.7)', 
                         height: '100%',
                         marginTop: '10px',
