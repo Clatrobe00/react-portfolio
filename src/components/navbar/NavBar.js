@@ -1,22 +1,43 @@
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
-import { NavDropdown } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaBars, FaAsterisk } from "react-icons/fa";
+import Data from './NavbarItems';
+import './Navbar.css';
 
-const NavBar = () => (
-    <Navbar bg="light" expand="lg" style={{ opacity: '80%', zIndex: 999 }}>
-        <Navbar.Brand href="/home">Charles Latrobe</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-            <Nav.Link href="home">Home</Nav.Link>
-            <Nav.Link href="contact">Contact</Nav.Link>
-            <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-                <NavDropdown.Item href="projects">Projects</NavDropdown.Item>
-                <NavDropdown.Item href="resume">Resume</NavDropdown.Item>
-            </NavDropdown>
-            </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-)
+const Navbar = () => {
 
-export default NavBar;
+    const [sidebar, setSidebar] = useState(false)
+
+    const toggleSidebar = () => setSidebar(!sidebar)
+
+    return (
+        <>
+            <div className="navbar">
+                <Link to="#" className="menu-bars">
+                    <FaBars onClick={toggleSidebar}/>
+                </Link>
+            </div>
+            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+                <ul className="nav-menuitems">
+                    <li className="nav-toggle">
+                        <Link to="#" className="menu-bars">
+                            <FaAsterisk onClick={toggleSidebar}/>
+                        </Link>
+                    </li>
+                    {Data.map((items, index) => {
+                        return (
+                            <li key={index} onClick={toggleSidebar} className={items.class}>
+                                <Link to={items.path}>
+                                    {items.icon}
+                                    <span>{items.name}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </nav>
+        </>
+    )
+}
+
+export default Navbar;

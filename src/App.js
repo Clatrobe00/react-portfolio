@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import NavBar from './components/Navbar2/Navbar';
+import NavBar from './components/Navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Resume from './pages/Resume';
 import Container from 'react-bootstrap/Container';
