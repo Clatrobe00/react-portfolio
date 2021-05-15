@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHome, FaSearchLocation, FaHistory } from "react-icons/fa";
+import { FaHome, FaPhoneAlt, FaProjectDiagram, FaRegFileAlt } from "react-icons/fa";
 
 const Data = [{
     name: 'Home',
@@ -10,19 +10,19 @@ const Data = [{
 {
     name: 'Contact',
     path: '/contact',
-    icon: <FaSearchLocation />,
+    icon: <FaPhoneAlt />,
     class: 'nav-item'
 },
 {
     name: 'Projects',
     path: '/projects',
-    icon: <FaHistory />,
+    icon: <FaProjectDiagram />,
     class: 'nav-item'
 },
 {
     name: 'Resume',
     path: '/resume',
-    icon: <FaHistory />,
+    icon: <FaRegFileAlt />,
     class: 'nav-item'
 }
 ]
