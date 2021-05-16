@@ -13,7 +13,7 @@ const ProjectCard = (props) => {
       config: { mass: 5, tension: 600, friction: 80 }
     })
     
-    if (props.children && props.link && props.repo) {
+    if (props.button && props.link && props.repo) {
         
         return (
  
@@ -41,7 +41,7 @@ const ProjectCard = (props) => {
                             </Card.Body>
                             <p>
                             <ProjectButton link={props.link}>
-                                {props.children}
+                                {props.button}
                             </ProjectButton>
                             <ProjectButton link={props.repo} buttonStyle='btn--outline'>
                                 Repo
@@ -74,7 +74,7 @@ const ProjectCard = (props) => {
                             </Card.Body>
                             <p>
                             <ProjectButton link={props.link}>
-                                {props.children}
+                                {props.button}
                             </ProjectButton>
                             <ProjectButton link={props.repo} buttonStyle='btn--outline'>
                                 Repo
@@ -94,9 +94,10 @@ const ProjectCard = (props) => {
             <Card.Text>
                 {props.description}
             </Card.Text>
-            {props.link ? <ProjectButton link={props.link}>
-                {props.children}
-            </ProjectButton> : <div>{props.children}</div>}
+            {props.children}
+            {props.link ? <ProjectButton link={props.link} className='btn-pro project-btn'>
+                {props.button}
+            </ProjectButton> : <div></div>}
         </Card.Body>
     </Card>
 )}
