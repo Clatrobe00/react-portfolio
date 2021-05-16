@@ -1,10 +1,13 @@
+import './TechList.css';
+import TechListData from './TechListData';
+
 const TechList = () => (
-    <ul style={{ textAlign: 'left' }}>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Sequelize</li>
-        <li>Mongoose</li>
-        <li>Semantic-UI</li>
+    <ul className="TechList">
+        {TechListData.map((item, index) => {
+            return (
+                <li className='TechItem' key={index}>{item}</li>
+            )
+        })}
     </ul>
 )
 
