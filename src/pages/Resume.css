@@ -1,12 +1,18 @@
 .resumeContainer {
     margin-top: 20px;
     width: 100%;
+    height: 800px;
+    overflow-y: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/* @media only screen and (max-width: 600px){
+
+.rpv-core-inner-page {
+    background: rgba(175, 175, 175, 0.3);
+}
+@media only screen and (max-width: 600px){
 	.resumeContainer {
-        width: 50%;
+        width: 100%;
     }
-} */
+}
