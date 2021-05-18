@@ -10,11 +10,8 @@ import burgerLogger from '../assets/pictures/burgerLogger.jpg';
 
 const Portfolio = () => {
 
-    const techList = ['node', 'react', 'css'];
-
     return (
-        <div style={{ zIndex: '1' }}>
-               {/* <Row style={{ position: 'absolute', top: '0px', display: 'flex' }}> */}
+        <div>
                  <CardDeck> 
                     <>
                     <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.' link='https://inesr19.github.io/Project-1/' repo='https://github.com/Clatrobe00/Music-Spider' button='Find some music' technologies={['Node', 'Shazaam Music API', 'Materialize CSS']}/>
@@ -27,8 +24,6 @@ const Portfolio = () => {
                     link='https://cyoa-rpg.herokuapp.com/' repo='https://github.com/Clatrobe00/CYOA' button='Try your luck' technologies={['Node', 'Handlebars', 'Sequelize']}/>
                     </>
                 </CardDeck>
-                {/* </Row>
-                <Row style={{ position: 'absolute', bottom: '0px' }}> */}
                 <CardDeck>
                     <>
                     <ProjectCard src={comingSoon} name='Google Books Search' description='A full stack MERN application that allows the user to search books through Google Books, and then save books to or delete books from their collection.' link='https://clb-google-books-search.herokuapp.com/' repo='https://github.com/Clatrobe00/google-books-search' button='Find your next book' technologies={['React', 'Google Cloud API', 'MongoDB Atlas']}/>
@@ -40,7 +35,6 @@ const Portfolio = () => {
                     <ProjectCard src={burgerLogger} name='The Burger Logger' description='A full-stack app built with Node, Express, SQL, and HandleBars.' repo='https://github.com/Clatrobe00/Burger-Logger' link='https://burger-logger-clb.herokuapp.com/' button='Grab a burger' technologies={['Node', 'Handlebars', 'JS']}/>
                     </>
                  </CardDeck> 
-                {/* </Row> */}
         </div>
     )
 }
