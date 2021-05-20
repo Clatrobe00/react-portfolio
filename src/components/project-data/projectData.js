@@ -16,13 +16,13 @@ const ProjectData = [
         technologies: ['Node', 'Shazaam Music API', 'Materialize CSS']
     },
     {
-        name: 'Lia Liu Chinese',
-        src: liaBanner,
-        description: 'A website for Lia Liu Chinese built with React.',
-        link: 'https://lia-liu-chinese.herokuapp.com/',
-        repo: 'https://github.com/Clatrobe00/liachinese',
-        button: 'Learn Chinese',
-        technologies: ['React', 'Node','Bootstrap']
+        name: 'Learnt Up',
+        src: learningApp,
+        description: 'A mobile-first language learning app for children.',
+        link: 'https://floating-oasis-75260.herokuapp.com/',
+        repo: 'https://github.com/kurtp23/language-app',
+        button: 'Expand your mind',
+        technologies: ['React', 'React-Spring', 'MongoDB Atlas']
     },
     {
         name: 'Castaway: Flight of the Phoenix',
@@ -34,6 +34,15 @@ const ProjectData = [
         technologies: ['Node', 'Handlebars', 'Sequelize']
     },
     {
+        name: 'Lia Liu Chinese',
+        src: liaBanner,
+        description: 'A website for Lia Liu Chinese built with React.',
+        link: 'https://lia-liu-chinese.herokuapp.com/',
+        repo: 'https://github.com/Clatrobe00/liachinese',
+        button: 'Learn Chinese',
+        technologies: ['React', 'Node','Bootstrap']
+    },
+    {
         name: 'Google Books Search',
         src: comingSoon,
         description: 'A full stack MERN application that allows the user to search books through Google Books, and then save books to or delete books from their collection.',
@@ -41,15 +50,6 @@ const ProjectData = [
         repo: 'https://github.com/Clatrobe00/google-books-search',
         button: 'Find your next book',
         technologies: ['React', 'Google Cloud API', 'MongoDB Atlas']
-    },
-    {
-        name: 'Language Learning App',
-        src: learningApp,
-        description: 'A mobile-first language learning app for children.',
-        link: 'https://floating-oasis-75260.herokuapp.com/',
-        repo: 'https://github.com/kurtp23/language-app',
-        button: 'Expand your mind',
-        technologies: ['React', 'React-Spring', 'MongoDB Atlas']
     },
     {
         name: 'The Burger Logger',
