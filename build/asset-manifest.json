@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.705a47d3.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.ed622a56.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.ed622a56.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.46bac5a3.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.f67aed47.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.f67aed47.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.e530417f.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e530417f.js.map",
-    "static/css/2.4c97ca4f.chunk.css": "/react-portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.47d5f58e.chunk.js": "/react-portfolio/static/js/2.47d5f58e.chunk.js",
-    "static/js/2.47d5f58e.chunk.js.map": "/react-portfolio/static/js/2.47d5f58e.chunk.js.map",
+    "static/css/2.64bd9bb2.chunk.css": "/react-portfolio/static/css/2.64bd9bb2.chunk.css",
+    "static/js/2.1555c2bf.chunk.js": "/react-portfolio/static/js/2.1555c2bf.chunk.js",
+    "static/js/2.1555c2bf.chunk.js.map": "/react-portfolio/static/js/2.1555c2bf.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "static/css/2.4c97ca4f.chunk.css.map": "/react-portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.705a47d3.chunk.css.map": "/react-portfolio/static/css/main.705a47d3.chunk.css.map",
-    "static/js/2.47d5f58e.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.47d5f58e.chunk.js.LICENSE.txt",
+    "static/css/2.64bd9bb2.chunk.css.map": "/react-portfolio/static/css/2.64bd9bb2.chunk.css.map",
+    "static/css/main.46bac5a3.chunk.css.map": "/react-portfolio/static/css/main.46bac5a3.chunk.css.map",
+    "static/js/2.1555c2bf.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.1555c2bf.chunk.js.LICENSE.txt",
     "static/media/Castaway.6136250f.jpg": "/react-portfolio/static/media/Castaway.6136250f.jpg",
     "static/media/ChineseLanterns.f44fac30.jpg": "/react-portfolio/static/media/ChineseLanterns.f44fac30.jpg",
     "static/media/ComingSoon.b57301e1.jpg": "/react-portfolio/static/media/ComingSoon.b57301e1.jpg",
@@ -24,9 +24,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e530417f.js",
-    "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.47d5f58e.chunk.js",
-    "static/css/main.705a47d3.chunk.css",
-    "static/js/main.ed622a56.chunk.js"
+    "static/css/2.64bd9bb2.chunk.css",
+    "static/js/2.1555c2bf.chunk.js",
+    "static/css/main.46bac5a3.chunk.css",
+    "static/js/main.f67aed47.chunk.js"
   ]
 }
