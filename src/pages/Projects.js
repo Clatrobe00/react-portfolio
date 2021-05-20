@@ -1,40 +1,24 @@
 import ProjectCard from '../components/project-card/ProjectCard';
-import musicSpiderGif from '../assets/gifs/Music-Spider.gif';
-import liaBanner from '../assets/pictures/ChineseLanterns.jpg';
-import cyoaBanner from '../assets/pictures/Castaway.jpg';
-import { Container, CardDeck, Card, Col, Row } from 'react-bootstrap';
-import comingSoon from '../assets/pictures/ComingSoon.jpg';
-import learningApp from '../assets/pictures/learningApp.jpg';
-import burgerLogger from '../assets/pictures/burgerLogger.jpg';
-
+import { CardDeck } from 'react-bootstrap';
+import projectData from '../components/project-data/projectData';
+const _ = require('lodash');
 
 const Portfolio = () => {
 
+    const chunks = _.chunk(projectData, 3);
+
+    const renderCardDecks = chunks.map((chunk, index) => {
+            const cards = chunk.map((project, index) => {
+                return (
+                    <ProjectCard key={index} src={project.src} name={project.name} description={project.description} link={project.link} repo={project.repo} button={project.button} technologies={project.technologies} />
+              );
+            });
+            return (<CardDeck key={index}>{cards}</CardDeck>)
+        });
+
     return (
         <div>
-                 <CardDeck> 
-                    <>
-                    <ProjectCard src={musicSpiderGif} name='Music Spider' description='A music finding app that allows the user to search up songs by lyrics and discover cool new artists.' link='https://inesr19.github.io/Project-1/' repo='https://github.com/Clatrobe00/Music-Spider' button='Find some music' technologies={['Node', 'Shazaam Music API', 'Materialize CSS']}/>
-                    </>
-                    <> 
-                    <ProjectCard src={liaBanner} name='Lia Liu Chinese' description='A website for Lia Liu Chinese built with React.' link='https://lia-liu-chinese.herokuapp.com/' repo='https://github.com/Clatrobe00/liachinese' button='Learn Chinese' technologies={['React', 'Node','Bootstrap']}/>
-                    </>
-                    <>
-                    <ProjectCard src={cyoaBanner} name='Castaway: Flight of the Phoenix' description='A choose-your-own-adventure style game that challenges the user to escape an alien planet.'
-                    link='https://cyoa-rpg.herokuapp.com/' repo='https://github.com/Clatrobe00/CYOA' button='Try your luck' technologies={['Node', 'Handlebars', 'Sequelize']}/>
-                    </>
-                </CardDeck>
-                <CardDeck>
-                    <>
-                    <ProjectCard src={comingSoon} name='Google Books Search' description='A full stack MERN application that allows the user to search books through Google Books, and then save books to or delete books from their collection.' link='https://clb-google-books-search.herokuapp.com/' repo='https://github.com/Clatrobe00/google-books-search' button='Find your next book' technologies={['React', 'Google Cloud API', 'MongoDB Atlas']}/>
-                    </>
-                    <>
-                    <ProjectCard src={learningApp} name='Language Learning App' description='A mobile-first language learning app for children.' repo='https://github.com/kurtp23/language-app' link='https://floating-oasis-75260.herokuapp.com/' button='Expand your mind' technologies={['React', 'React-Spring', 'MongoDB Atlas']}/>
-                    </>
-                    <>          
-                    <ProjectCard src={burgerLogger} name='The Burger Logger' description='A full-stack app built with Node, Express, SQL, and HandleBars.' repo='https://github.com/Clatrobe00/Burger-Logger' link='https://burger-logger-clb.herokuapp.com/' button='Grab a burger' technologies={['Node', 'Handlebars', 'JS']}/>
-                    </>
-                 </CardDeck> 
+            {renderCardDecks}
         </div>
     )
 }
