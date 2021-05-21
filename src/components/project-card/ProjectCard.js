@@ -23,9 +23,9 @@ const ProjectCard = (props) => {
                     position: 'relative',
                     marginTop: '10px',
                     marginBottom: '10px' }} id='wrapper' onClick={() => set(state => !state)}>
-                    <a.div class="c back" style={{ 
+                    <a.div className="c back" style={{ 
                         bottom: '0px', 
-                        opacity: opacity.interpolate(o => 1 - o), 
+                        opacity: opacity.to(o => 1 - o), 
                         transform,
                         zIndex: '1' }}>
                         <Card className='genCard projectCard' style={{ backgroundColor: 'rgba(175, 175, 175, 0.7)', 
@@ -39,22 +39,22 @@ const ProjectCard = (props) => {
                                     {props.description}
                                 </Card.Text>
                             </Card.Body>
-                            <p>
+                            <div>
                             <ProjectButton link={props.link}>
                                 {props.button}
                             </ProjectButton>
                             <ProjectButton link={props.repo} buttonStyle='btn--outline'>
                                 Repo
                             </ProjectButton>
-                            </p>
+                            </div>
                         </Card>
                     </a.div>
-                    <a.div class="c front" 
+                    <a.div className="c front" 
                         style={{ position: 'absolute',
                             marginLeft: 'auto',
                             marginRight: 'auto',
                             opacity, 
-                            transform: transform.interpolate(t => `${t} rotateX(180deg)`) }}>
+                            transform: transform.to(t => `${t} rotateX(180deg)`) }}>
                         <Card className='genCard projectCard' style={{ 
                             height: '100%', 
                             backgroundColor: 'rgba(175, 175, 175, 0.7)',
@@ -64,22 +64,22 @@ const ProjectCard = (props) => {
                             <Card.Body>
                                 <Card.Title>{props.name}</Card.Title>
                                 <Card.Text>
-                                <h6>Tech Used</h6>
-                                <ul style={{ textAlign: 'left' }}>
+                                <p style={{ fontSize: '18px' }}>Tech Used</p>
+                                <ul style={{ textAlign: 'center', listStyle: 'none' }}>
                                     <li>{props.technologies[0]}</li>
                                     <li>{props.technologies[1]}</li>
                                     <li>{props.technologies[2]}</li>
                                 </ul>
                                 </Card.Text>
                             </Card.Body>
-                            <p>
+                            <div>
                             <ProjectButton link={props.link}>
                                 {props.button}
                             </ProjectButton>
                             <ProjectButton link={props.repo} buttonStyle='btn--outline'>
                                 Repo
                             </ProjectButton>
-                            </p>
+                            </div>
                         </Card>
                     </a.div>
                 </Card>
