@@ -3,7 +3,7 @@ import liaBanner from '../../assets/pictures/ChineseLanterns.jpg';
 import cyoaBanner from '../../assets/pictures/Castaway.jpg';
 import comingSoon from '../../assets/pictures/ComingSoon.jpg';
 import learningApp from '../../assets/pictures/learningApp.jpg';
-import burgerLogger from '../../assets/pictures/burgerLogger.jpg';
+import HikeTracker from '../../assets/pictures/HikeTracker.png';
 
 const ProjectData = [
     {
@@ -52,13 +52,13 @@ const ProjectData = [
         technologies: ['React', 'Google Cloud API', 'MongoDB Atlas']
     },
     {
-        name: 'The Burger Logger',
-        src: burgerLogger,
-        description: 'A full-stack app built with Node, Express, SQL, and HandleBars.',
-        link: 'https://burger-logger-clb.herokuapp.com/',
-        repo: 'https://github.com/Clatrobe00/Burger-Logger',
-        button: 'Find some music',
-        technologies: ['Node', 'Handlebars', 'JS']
+        name: 'Hike Tracker',
+        src: HikeTracker,
+        description: 'A MERN application I use to track hikes I have taken and distance covered',
+        link: 'https://hike-tracker-v2.herokuapp.com/',
+        repo: 'https://github.com/Clatrobe00/hike-tracker',
+        button: 'Go Outside',
+        technologies: ['React', 'Mongoose', 'JSX']
     },
 ]
 
