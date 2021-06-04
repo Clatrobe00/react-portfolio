@@ -1,6 +1,7 @@
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import ProjectButton from '../button/ProjectButton';
 import './ContactJumbo.css';
+import Form from '../form/Form';
 
 const ContactJumbo = () => {
 
@@ -18,6 +19,11 @@ const ContactJumbo = () => {
         <p>
             <ProjectButton link='mailto:charlie.bateman117@gmail.com?subject=Subject&body=You%20are%20hired!' children='Charlie.Bateman117@gmail.com'/>
         </p>
+        <p>
+            Or, feel free to drop me a line right here! Leave your name, email and a brief description of your project.
+        </p>
+        <Form />
+
         </Jumbotron>
     )
 //This form will have to be removed an replaced with more succinct/secure contact info.
