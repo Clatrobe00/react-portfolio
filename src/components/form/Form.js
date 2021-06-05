@@ -17,17 +17,17 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        try {
+        // try {
 
-            await Axios.post(
-                '/.netlify/functions/sendgrid',
-                { message:  '<br>' + 'Name: ' + formInfo.name + '<br>' + 'Email: ' + formInfo.email + '<br>' + 'Message: ' + formInfo.message + '<br>' + 'Message End' }
-            )
-        }
-        catch(e) {
-            console.error(e);
-            alert('Your message could not be sent.')
-        }
+        //     await Axios.post(
+        //         '/.netlify/functions/sendgrid',
+        //         { message:  '<br>' + 'Name: ' + formInfo.name + '<br>' + 'Email: ' + formInfo.email + '<br>' + 'Message: ' + formInfo.message + '<br>' + 'Message End' }
+        //     )
+        // }
+        // catch(e) {
+        //     console.error(e);
+        //     alert('Your message could not be sent.')
+        // }
         console.log('submitting: ', formInfo);
     }
 
