@@ -20,7 +20,7 @@ const ContactJumbo = () => {
             <ProjectButton link='mailto:charlie.bateman117@gmail.com?subject=Subject&body=You%20are%20hired!' children='Charlie.Bateman117@gmail.com'/>
         </p>
         <p>
-            Or, feel free to drop me a line right here! Leave your name, email and a brief description of your project.
+            Coming Soon: Drop me a line right here!
         </p>
         <Form />
 
