@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Form.css';
 import ProjectButton from '../button/ProjectButton';
+import Axios from 'axios';
 
 const Form = () => {
 
@@ -14,8 +15,19 @@ const Form = () => {
         setFormInfo({...formInfo, [e.target.id]: e.target.value})
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
+        try {
+
+            await Axios.post(
+                '/.netlify/functions/sendgrid',
+                { message:  '<br>' + 'Name: ' + formInfo.name + '<br>' + 'Email: ' + formInfo.email + '<br>' + 'Message: ' + formInfo.message + '<br>' + 'Message End' }
+            )
+        }
+        catch(e) {
+            console.error(e);
+            alert('Your message could not be sent.')
+        }
         console.log('submitting: ', formInfo);
     }
 
