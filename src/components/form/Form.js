@@ -35,18 +35,18 @@ const Form = () => {
         <div className='form-container'>
             <form action="/my-handling-form-page" method="post">
                 <ul className='form-list'>
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" onChange={handleChange} id="name" value={formInfo.name}/>
-                </li>
-                <li>
-                    <label for="mail">E-mail:</label>
-                    <input type="text" onChange={handleChange} id="email" value={formInfo.email} />
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea id="message" onChange={handleChange} value={formInfo.message}></textarea>
-                </li>
+                    <li>
+                        <label className="label" for="name">Name:</label>
+                        <input className="input" type="text" onChange={handleChange} id="name" value={formInfo.name}/>
+                    </li>
+                    <li>
+                        <label className="label" for="mail">E-mail:</label>
+                        <input className="input" type="text" onChange={handleChange} id="email" value={formInfo.email} />
+                    </li>
+                    <li>
+                        <label className="label" for="msg">Message:</label>
+                        <textarea className="input" id="message" onChange={handleChange} value={formInfo.message}></textarea>
+                    </li>
                 </ul>
                 <ProjectButton children='Submit' onClick={handleSubmit} />
             </form>
