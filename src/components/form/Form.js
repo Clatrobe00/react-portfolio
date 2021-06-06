@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Form.css';
 import ProjectButton from '../button/ProjectButton';
 import Axios from 'axios';
+import handleValidation from '../../utils/handleValidation';
 
 const Form = () => {
 
@@ -17,18 +18,28 @@ const Form = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        // try {
+        const valRes = handleValidation(formInfo);
+        const errors = Object.values(valRes.errors);
 
-        //     await Axios.post(
-        //         '/.netlify/functions/sendgrid',
-        //         { message:  '<br>' + 'Name: ' + formInfo.name + '<br>' + 'Email: ' + formInfo.email + '<br>' + 'Message: ' + formInfo.message + '<br>' + 'Message End' }
-        //     )
-        // }
-        // catch(e) {
-        //     console.error(e);
-        //     alert('Your message could not be sent.')
-        // }
-        console.log('submitting: ', formInfo);
+        if (valRes.valid) {
+
+            try {
+    
+                await Axios.post(
+                    '/.netlify/functions/sendgrid',
+                    { message:  '<br>' + 'Name: ' + formInfo.name + '<br>' + 'Email: ' + formInfo.email + '<br>' + 'Message: ' + formInfo.message + '<br>' + 'Message End' }
+                )
+                alert('Message Sent');
+                window.location.reload();
+            }
+            catch(e) {
+                console.error(e);
+                alert('Your message could not be sent.');
+            }
+        }
+        else {
+            alert(errors[0]);
+        }
     }
 
     return (
@@ -37,15 +48,15 @@ const Form = () => {
                 <ul className='form-list'>
                     <li>
                         <label className="label" for="name">Name:</label>
-                        <input className="input" type="text" onChange={handleChange} id="name" value={formInfo.name}/>
+                        <input className="input" maxlength="30" type="text" onChange={handleChange} id="name" value={formInfo.name}/>
                     </li>
                     <li>
                         <label className="label" for="mail">E-mail:</label>
-                        <input className="input" type="text" onChange={handleChange} id="email" value={formInfo.email} />
+                        <input className="input" maxlength="30" type="text" onChange={handleChange} id="email" value={formInfo.email} />
                     </li>
                     <li>
                         <label className="label" for="msg">Message:</label>
-                        <textarea className="input" id="message" onChange={handleChange} value={formInfo.message}></textarea>
+                        <textarea className="input" maxlength="500" id="message" onChange={handleChange} value={formInfo.message}></textarea>
                     </li>
                 </ul>
                 <ProjectButton children='Submit' onClick={handleSubmit} />
