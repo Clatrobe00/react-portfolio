@@ -4,3 +4,13 @@
     margin: 30px;
     padding: 0;
 }
+
+@media only screen and (max-width: 600px){
+    .HomeJumbo {
+        background: rgba(175, 175, 175, 0.3);
+        outline: 10px solid #fff;
+        margin: 5px;
+        margin-top: 10px;
+        padding: 0;
+    }
+}
