@@ -4,7 +4,7 @@ import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import './Resume.css';
 import { pdfjs } from 'react-pdf';
-import resume from '../assets/pdf/LatrobeWDResume.pdf';
+import resume from '../assets/pdf/Resume.pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 
