@@ -56,7 +56,7 @@ const Form = () => {
                     </li>
                     <li>
                         <label className="label" for="msg">Message:</label>
-                        <textarea className="input" maxlength="500" id="message" onChange={handleChange} value={formInfo.message}></textarea>
+                        <textarea className="input" rows='5' maxlength="500" id="message" onChange={handleChange} value={formInfo.message}></textarea>
                     </li>
                 </ul>
                 <ProjectButton children='Submit' onClick={handleSubmit} />
