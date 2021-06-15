@@ -19,7 +19,7 @@ const HomeJumbo = () => {
                         </ProjectCard>
                     </Col>
                     <Col sm={{ order: '3'}}>
-                        <ProjectCard name='Technological Proficiencies' description={false} link='https://github.com/Clatrobe00/netlify-serverless-functions' button='Currently: Experimenting with Serverless Functions'>
+                        <ProjectCard name='Technological Proficiencies' description={false} link='https://github.com/Clatrobe00/lonely-universe-testBed' button='Currently: Playing Around With Game Design'>
                             <TechList />
                         </ProjectCard>
                     </Col>
